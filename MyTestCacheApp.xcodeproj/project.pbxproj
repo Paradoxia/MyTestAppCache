@@ -12,13 +12,30 @@
 		73384AF722512BFE00AA316F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73384AF522512BFE00AA316F /* Main.storyboard */; };
 		73384AF922512C0000AA316F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73384AF822512C0000AA316F /* Assets.xcassets */; };
 		73384AFC22512C0000AA316F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73384AFA22512C0000AA316F /* LaunchScreen.storyboard */; };
-		73384B0722512C0000AA316F /* MyTestCacheAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B0622512C0000AA316F /* MyTestCacheAppTests.swift */; };
 		73384B1522512C7D00AA316F /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B1422512C7D00AA316F /* FormatHelper.swift */; };
 		73384B1622512C7D00AA316F /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B1422512C7D00AA316F /* FormatHelper.swift */; };
 		73384B1822512CA300AA316F /* FormatHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B1722512CA300AA316F /* FormatHelperTests.swift */; };
 		73384B1E225133AE00AA316F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B1D225133AE00AA316F /* DateExtension.swift */; };
 		73384B1F225133AE00AA316F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B1D225133AE00AA316F /* DateExtension.swift */; };
 		73384B212251342E00AA316F /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B202251342E00AA316F /* ExtensionTests.swift */; };
+		73384B2322513D0500AA316F /* ExpireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B2222513D0500AA316F /* ExpireService.swift */; };
+		73384B2422513D0500AA316F /* ExpireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B2222513D0500AA316F /* ExpireService.swift */; };
+		73384B2622513DD500AA316F /* ExpireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B2522513DD500AA316F /* ExpireProvider.swift */; };
+		73384B2722513DD500AA316F /* ExpireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B2522513DD500AA316F /* ExpireProvider.swift */; };
+		73384B292251412000AA316F /* ExpireServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B282251412000AA316F /* ExpireServiceTests.swift */; };
+		73384B2E225279D200AA316F /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B2D225279D200AA316F /* FileService.swift */; };
+		73384B2F225279D200AA316F /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B2D225279D200AA316F /* FileService.swift */; };
+		73384B3122527AE600AA316F /* FileCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3022527AE600AA316F /* FileCacheService.swift */; };
+		73384B3222527AE600AA316F /* FileCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3022527AE600AA316F /* FileCacheService.swift */; };
+		73384B3422527C4400AA316F /* FileCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3322527C4400AA316F /* FileCacheProvider.swift */; };
+		73384B3522527C4400AA316F /* FileCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3322527C4400AA316F /* FileCacheProvider.swift */; };
+		73384B3722527CE000AA316F /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3622527CE000AA316F /* FileProvider.swift */; };
+		73384B3822527CE000AA316F /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3622527CE000AA316F /* FileProvider.swift */; };
+		73384B3A2252805B00AA316F /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B392252805B00AA316F /* FileServiceTests.swift */; };
+		73384B3C22528A9000AA316F /* FileCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3B22528A9000AA316F /* FileCacheServiceTests.swift */; };
+		73384B3E2252969C00AA316F /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3D2252969C00AA316F /* TimeService.swift */; };
+		73384B3F2252969C00AA316F /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3D2252969C00AA316F /* TimeService.swift */; };
+		73384B412252982600AA316F /* MockedTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B402252982600AA316F /* MockedTimeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +57,22 @@
 		73384AFB22512C0000AA316F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73384AFD22512C0000AA316F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73384B0222512C0000AA316F /* MyTestCacheAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTestCacheAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73384B0622512C0000AA316F /* MyTestCacheAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestCacheAppTests.swift; sourceTree = "<group>"; };
 		73384B0822512C0000AA316F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73384B1422512C7D00AA316F /* FormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelper.swift; sourceTree = "<group>"; };
 		73384B1722512CA300AA316F /* FormatHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelperTests.swift; sourceTree = "<group>"; };
 		73384B1D225133AE00AA316F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		73384B202251342E00AA316F /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		73384B2222513D0500AA316F /* ExpireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireService.swift; sourceTree = "<group>"; };
+		73384B2522513DD500AA316F /* ExpireProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireProvider.swift; sourceTree = "<group>"; };
+		73384B282251412000AA316F /* ExpireServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpireServiceTests.swift; sourceTree = "<group>"; };
+		73384B2D225279D200AA316F /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		73384B3022527AE600AA316F /* FileCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheService.swift; sourceTree = "<group>"; };
+		73384B3322527C4400AA316F /* FileCacheProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheProvider.swift; sourceTree = "<group>"; };
+		73384B3622527CE000AA316F /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		73384B392252805B00AA316F /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
+		73384B3B22528A9000AA316F /* FileCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheServiceTests.swift; sourceTree = "<group>"; };
+		73384B3D2252969C00AA316F /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
+		73384B402252982600AA316F /* MockedTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedTimeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +131,13 @@
 		73384B0522512C0000AA316F /* MyTestCacheAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				73384B0622512C0000AA316F /* MyTestCacheAppTests.swift */,
 				73384B0822512C0000AA316F /* Info.plist */,
 				73384B1722512CA300AA316F /* FormatHelperTests.swift */,
 				73384B202251342E00AA316F /* ExtensionTests.swift */,
+				73384B282251412000AA316F /* ExpireServiceTests.swift */,
+				73384B392252805B00AA316F /* FileServiceTests.swift */,
+				73384B3B22528A9000AA316F /* FileCacheServiceTests.swift */,
+				73384B402252982600AA316F /* MockedTimeService.swift */,
 			);
 			path = MyTestCacheAppTests;
 			sourceTree = "<group>";
@@ -115,6 +145,10 @@
 		73384B1122512C2100AA316F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				73384B2222513D0500AA316F /* ExpireService.swift */,
+				73384B2D225279D200AA316F /* FileService.swift */,
+				73384B3022527AE600AA316F /* FileCacheService.swift */,
+				73384B3D2252969C00AA316F /* TimeService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -122,6 +156,9 @@
 		73384B1222512C2E00AA316F /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				73384B2522513DD500AA316F /* ExpireProvider.swift */,
+				73384B3322527C4400AA316F /* FileCacheProvider.swift */,
+				73384B3622527CE000AA316F /* FileProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -243,10 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73384B3422527C4400AA316F /* FileCacheProvider.swift in Sources */,
 				73384B1522512C7D00AA316F /* FormatHelper.swift in Sources */,
+				73384B3E2252969C00AA316F /* TimeService.swift in Sources */,
+				73384B2E225279D200AA316F /* FileService.swift in Sources */,
+				73384B2322513D0500AA316F /* ExpireService.swift in Sources */,
+				73384B3722527CE000AA316F /* FileProvider.swift in Sources */,
 				73384B1E225133AE00AA316F /* DateExtension.swift in Sources */,
 				73384AF422512BFE00AA316F /* ViewController.swift in Sources */,
 				73384AF222512BFE00AA316F /* AppDelegate.swift in Sources */,
+				73384B3122527AE600AA316F /* FileCacheService.swift in Sources */,
+				73384B2622513DD500AA316F /* ExpireProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73384B3F2252969C00AA316F /* TimeService.swift in Sources */,
 				73384B1822512CA300AA316F /* FormatHelperTests.swift in Sources */,
+				73384B292251412000AA316F /* ExpireServiceTests.swift in Sources */,
+				73384B2422513D0500AA316F /* ExpireService.swift in Sources */,
+				73384B3222527AE600AA316F /* FileCacheService.swift in Sources */,
+				73384B3C22528A9000AA316F /* FileCacheServiceTests.swift in Sources */,
 				73384B1F225133AE00AA316F /* DateExtension.swift in Sources */,
 				73384B1622512C7D00AA316F /* FormatHelper.swift in Sources */,
+				73384B2F225279D200AA316F /* FileService.swift in Sources */,
 				73384B212251342E00AA316F /* ExtensionTests.swift in Sources */,
-				73384B0722512C0000AA316F /* MyTestCacheAppTests.swift in Sources */,
+				73384B2722513DD500AA316F /* ExpireProvider.swift in Sources */,
+				73384B3A2252805B00AA316F /* FileServiceTests.swift in Sources */,
+				73384B412252982600AA316F /* MockedTimeService.swift in Sources */,
+				73384B3822527CE000AA316F /* FileProvider.swift in Sources */,
+				73384B3522527C4400AA316F /* FileCacheProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
