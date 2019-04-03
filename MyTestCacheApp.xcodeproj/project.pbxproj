@@ -38,6 +38,7 @@
 		73384B412252982600AA316F /* MockedTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B402252982600AA316F /* MockedTimeService.swift */; };
 		73384B4322552DE100AA316F /* TempFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B4222552DE100AA316F /* TempFileProvider.swift */; };
 		73384B4422552DE100AA316F /* TempFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B4222552DE100AA316F /* TempFileProvider.swift */; };
+		73384B482255369400AA316F /* TempFileCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B472255369400AA316F /* TempFileCacheServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		73384B3D2252969C00AA316F /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
 		73384B402252982600AA316F /* MockedTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedTimeService.swift; sourceTree = "<group>"; };
 		73384B4222552DE100AA316F /* TempFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFileProvider.swift; sourceTree = "<group>"; };
+		73384B472255369400AA316F /* TempFileCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFileCacheServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				73384B392252805B00AA316F /* FileServiceTests.swift */,
 				73384B3B22528A9000AA316F /* FileCacheServiceTests.swift */,
 				73384B402252982600AA316F /* MockedTimeService.swift */,
+				73384B472255369400AA316F /* TempFileCacheServiceTests.swift */,
 			);
 			path = MyTestCacheAppTests;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				73384B2422513D0500AA316F /* ExpireService.swift in Sources */,
 				73384B3222527AE600AA316F /* FileCacheService.swift in Sources */,
 				73384B3C22528A9000AA316F /* FileCacheServiceTests.swift in Sources */,
+				73384B482255369400AA316F /* TempFileCacheServiceTests.swift in Sources */,
 				73384B1F225133AE00AA316F /* DateExtension.swift in Sources */,
 				73384B1622512C7D00AA316F /* FormatHelper.swift in Sources */,
 				73384B2F225279D200AA316F /* FileService.swift in Sources */,
