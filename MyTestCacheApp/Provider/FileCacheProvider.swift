@@ -21,7 +21,18 @@ struct FileCacheProvider : FileCacheService {
     }
     
     func exists(_ key: String) -> Bool {
-        return findFileByFilenamePrefix(key) != nil
+        let fileFound = findFileByFilenamePrefix(key)
+        if(fileFound != nil) {
+            let hasExpired = expireService.hasExpired(fileFound!, timeService.getCurrentDate())
+            if(hasExpired) {
+                fileService.delete(fileFound!)
+                return false
+            } else {
+                return true
+            }
+        } else {
+            return false
+        }
     }
     
     func set(_ key: String, _ value: String?) {
@@ -35,7 +46,7 @@ struct FileCacheProvider : FileCacheService {
         deleteIfFilenameExists(key)
         let cacheKey = "\(key).cache"
         
-        let currentDate = Date()
+        let currentDate = timeService.getCurrentDate()
         let expireDate = FormatHelper.addSecondsToDate(currentDate, ttlInSec)
         
         let filenameWithExpireDate = expireService.createFilenameWithExpireDate(cacheKey, expireDate)
@@ -44,17 +55,28 @@ struct FileCacheProvider : FileCacheService {
     
     func keys() -> Array<String> {
         let files = fileService.list()
- 
-        // Fix 
-        return Array(files.keys)
+        return Array(files)
     }
     
     func remove(_ key: String) {
-        
+        let fileFound = findFileByFilenamePrefix(key)
+        if(fileFound != nil) {
+            fileService.delete(fileFound!)
+        }
     }
     
     func load(_ key: String) -> String? {
-        return nil
+        if(exists(key)) {
+            let fileFound = findFileByFilenamePrefix(key)
+            if(fileFound != nil) {
+                let value = fileService.load(fileFound!)
+                return value
+            } else {
+                return nil
+            }
+        } else {
+            return nil
+        }
     }
     
     func findFileByFilenamePrefix(_ filenamePrefix : String) -> String? {
