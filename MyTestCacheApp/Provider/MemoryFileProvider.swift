@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FileProvider : FileService {
+class MemoryFileProvider : FileService {
 
     var files: [String: String] = [:]
     

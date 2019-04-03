@@ -29,13 +29,15 @@
 		73384B3222527AE600AA316F /* FileCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3022527AE600AA316F /* FileCacheService.swift */; };
 		73384B3422527C4400AA316F /* FileCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3322527C4400AA316F /* FileCacheProvider.swift */; };
 		73384B3522527C4400AA316F /* FileCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3322527C4400AA316F /* FileCacheProvider.swift */; };
-		73384B3722527CE000AA316F /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3622527CE000AA316F /* FileProvider.swift */; };
-		73384B3822527CE000AA316F /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3622527CE000AA316F /* FileProvider.swift */; };
+		73384B3722527CE000AA316F /* MemoryFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3622527CE000AA316F /* MemoryFileProvider.swift */; };
+		73384B3822527CE000AA316F /* MemoryFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3622527CE000AA316F /* MemoryFileProvider.swift */; };
 		73384B3A2252805B00AA316F /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B392252805B00AA316F /* FileServiceTests.swift */; };
 		73384B3C22528A9000AA316F /* FileCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3B22528A9000AA316F /* FileCacheServiceTests.swift */; };
 		73384B3E2252969C00AA316F /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3D2252969C00AA316F /* TimeService.swift */; };
 		73384B3F2252969C00AA316F /* TimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B3D2252969C00AA316F /* TimeService.swift */; };
 		73384B412252982600AA316F /* MockedTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B402252982600AA316F /* MockedTimeService.swift */; };
+		73384B4322552DE100AA316F /* TempFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B4222552DE100AA316F /* TempFileProvider.swift */; };
+		73384B4422552DE100AA316F /* TempFileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73384B4222552DE100AA316F /* TempFileProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +70,12 @@
 		73384B2D225279D200AA316F /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		73384B3022527AE600AA316F /* FileCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheService.swift; sourceTree = "<group>"; };
 		73384B3322527C4400AA316F /* FileCacheProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheProvider.swift; sourceTree = "<group>"; };
-		73384B3622527CE000AA316F /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		73384B3622527CE000AA316F /* MemoryFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryFileProvider.swift; sourceTree = "<group>"; };
 		73384B392252805B00AA316F /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		73384B3B22528A9000AA316F /* FileCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheServiceTests.swift; sourceTree = "<group>"; };
 		73384B3D2252969C00AA316F /* TimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeService.swift; sourceTree = "<group>"; };
 		73384B402252982600AA316F /* MockedTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedTimeService.swift; sourceTree = "<group>"; };
+		73384B4222552DE100AA316F /* TempFileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFileProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +161,8 @@
 			children = (
 				73384B2522513DD500AA316F /* ExpireProvider.swift */,
 				73384B3322527C4400AA316F /* FileCacheProvider.swift */,
-				73384B3622527CE000AA316F /* FileProvider.swift */,
+				73384B3622527CE000AA316F /* MemoryFileProvider.swift */,
+				73384B4222552DE100AA316F /* TempFileProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -282,10 +286,11 @@
 			files = (
 				73384B3422527C4400AA316F /* FileCacheProvider.swift in Sources */,
 				73384B1522512C7D00AA316F /* FormatHelper.swift in Sources */,
+				73384B4322552DE100AA316F /* TempFileProvider.swift in Sources */,
 				73384B3E2252969C00AA316F /* TimeService.swift in Sources */,
 				73384B2E225279D200AA316F /* FileService.swift in Sources */,
 				73384B2322513D0500AA316F /* ExpireService.swift in Sources */,
-				73384B3722527CE000AA316F /* FileProvider.swift in Sources */,
+				73384B3722527CE000AA316F /* MemoryFileProvider.swift in Sources */,
 				73384B1E225133AE00AA316F /* DateExtension.swift in Sources */,
 				73384AF422512BFE00AA316F /* ViewController.swift in Sources */,
 				73384AF222512BFE00AA316F /* AppDelegate.swift in Sources */,
@@ -300,6 +305,7 @@
 			files = (
 				73384B3F2252969C00AA316F /* TimeService.swift in Sources */,
 				73384B1822512CA300AA316F /* FormatHelperTests.swift in Sources */,
+				73384B4422552DE100AA316F /* TempFileProvider.swift in Sources */,
 				73384B292251412000AA316F /* ExpireServiceTests.swift in Sources */,
 				73384B2422513D0500AA316F /* ExpireService.swift in Sources */,
 				73384B3222527AE600AA316F /* FileCacheService.swift in Sources */,
@@ -311,7 +317,7 @@
 				73384B2722513DD500AA316F /* ExpireProvider.swift in Sources */,
 				73384B3A2252805B00AA316F /* FileServiceTests.swift in Sources */,
 				73384B412252982600AA316F /* MockedTimeService.swift in Sources */,
-				73384B3822527CE000AA316F /* FileProvider.swift in Sources */,
+				73384B3822527CE000AA316F /* MemoryFileProvider.swift in Sources */,
 				73384B3522527C4400AA316F /* FileCacheProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

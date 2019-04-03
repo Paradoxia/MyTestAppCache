@@ -10,10 +10,10 @@ import XCTest
 
 class FileServiceTests: XCTestCase {
 
-    var fileService : FileProvider?
+    var fileService : MemoryFileProvider?
     
     override func setUp() {
-        fileService = FileProvider()
+        fileService = MemoryFileProvider()
     }
 
     override func tearDown() {

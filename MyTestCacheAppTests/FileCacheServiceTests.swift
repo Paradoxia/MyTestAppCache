@@ -17,7 +17,7 @@ class FileCacheServiceTests: XCTestCase {
     
     override func setUp() {
         expireService = ExpireProvider()
-        fileService = FileProvider()
+        fileService = MemoryFileProvider()
         
         let mockedDate = FormatHelper.createCustomDate(2019, 1, 2, 3, 4, 5)
         mockedTimeService = MockedTimeProvider(mockedDate)
